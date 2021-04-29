@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    username: ${USERNAME:postgres}
+    password: ${PASSWORD:docker}
+    url: ${DATABASE_URL:jdbc:postgresql://172.17.0.2:5432/codenation}
